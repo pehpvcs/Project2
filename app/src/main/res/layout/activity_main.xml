@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insira a data de nascimento e a data atual para calcular a idade"
+        android:textSize="18sp"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/etBirthdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data de nascimento (dd/mm/aaaa)"
+        android:inputType="date"
+        android:ems="10"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/etCurrentDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data atual (dd/mm/aaaa)"
+        android:inputType="date"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:padding="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Próximo"
+            android:padding="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
